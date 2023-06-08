@@ -1,18 +1,12 @@
 import sys
 
-number = sys.argv[1]
-
-# print(number)
-
-# if number.isdigit() == True:
-if int(number) == True:
-	print("pair")
-# 	if int(number) % 2 == 0:
-# 	else:
-# 		print("impair")
-# else:
-# 	print("Tu ne me la mettrasa pas à l'envers.")
-
-
-int(number) % 2
-print(int(number) % 2)
+try:
+	if len(sys.argv) == 2:	
+		if int(sys.argv[1]) % 2 == 0:
+			print("pair")
+		else:
+			print("impair")
+	else:
+		print("Tu ne me la mettras pas à l'envers.")
+except ValueError:
+	print("Tu ne me la mettras pas à l'envers.")
