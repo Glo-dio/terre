@@ -1,7 +1,7 @@
 import sys
 
 try:
-	if len(sys.argv) == 2:	
+	if len(sys.argv) == 2:
 		if int(sys.argv[1]) % 2 == 0:
 			print("pair")
 		else:
