@@ -8,12 +8,12 @@ if len(sys.argv) == 2 and len(sys.argv[1]) == 5:
 	elif sys.argv[1][2] != ":":
 		print("error.")
 	elif int(sys.argv[1][0:2]) > 12:
-		print("%02d:%dPM" % (int(sys.argv[1][0:2]) - 12, int(sys.argv[1][3:5])))
+		print("%02d:%02dPM" % (int(sys.argv[1][0:2]) - 12, int(sys.argv[1][3:5])))
 	elif int(sys.argv[1][0:2]) == 0:
-		print("%02d:%dAM" % (int(sys.argv[1][0:2]) + 12, int(sys.argv[1][3:5])))
+		print("%02d:%02dAM" % (int(sys.argv[1][0:2]) + 12, int(sys.argv[1][3:5])))
 	elif int(sys.argv[1][0:2]) == 12:
-		print("%02d:%dPM" % (int(sys.argv[1][0:2]), int(sys.argv[1][3:5])))
+		print("%02d:%02dPM" % (int(sys.argv[1][0:2]), int(sys.argv[1][3:5])))
 	else:
-		print("%02d:%dAM" % (int(sys.argv[1][0:2]), int(sys.argv[1][3:5])))
+		print("%02d:%02dAM" % (int(sys.argv[1][0:2]), int(sys.argv[1][3:5])))
 else:
 	print("error.")
